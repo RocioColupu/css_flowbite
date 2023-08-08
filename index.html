@@ -10,23 +10,24 @@
 
 <body>
     <section>
-        <h2> Actualizar Producto</h2>
-        <form action="#"></form>
+        <div class="container">
+            <h2> Actualizar Producto</h2>
+            <form action="#"></form>
             <div>
-                <span> Nombre del producto</span>
-                <input type="text" placeholder="Escriba el nombre del producto">
+                <label>Nombre del producto: </label>
+                <input type="text" autofocus placeholder="Escriba el nombre del producto">
             </div>
             <div>
-                <span>Marca</span>
-                <input type="text" placeholder="Producto de marca">
+                <label>Marca: </label>
+                <input type="text" autofocus placeholder="Producto de marca">
             </div>
             <div>
-                <span>Precio</span>
-                <input type="number" placeholder="$200">
+                <label>Precio: </label>
+                <input type="number" autofocus placeholder="$200">
             </div>
             <div>
-                <span>Categoria</span>
-                <select name="categoria" id="">
+                <label>Categoria: </label>
+                <select name="categoria" autofocus id="">
                     <option value="value1">Electronica</option>
                     <option value="value2">Tv/Monitores </option>
                     <option value="value3">Ordenador Personal</option>
@@ -34,18 +35,21 @@
                     <option value="value5">Telefono</option>
                 </select>
             </div>
-                <span>Peso del Articulo (kg)</span>
-                <input type="number" name="quantity" min="1" max="100" placeholder="Ex. 12">
+            <div>
+                <label>Peso del Articulo (kg): </label>
+                <input type="number" autofocus name="quantity" min="1" max="100" placeholder="Ex. 12">
             </div>
             <div>
-                <span>Descripcion</span>
-                <textarea name="" id="" cols="20" rows="5" placeholder="Escribe la descripcion del producto aqui.."></textarea>
+                <label>Descripcion: </label>
+                <textarea name="" id="" autofocus cols="20" rows="8"
+                    placeholder="Escribe la descripcion del producto aqui.."></textarea>
             </div>
             <div class="Botones">
-                <button type="submit"> Actualizar Producto</button>
-                <button type="reset"> <img src="assets/trash.svg"> Borrar </button>
+                <button type="submit" class="actualizar"> Actualizar Producto</button>
+                <button type="reset" class="borrar"> <img src="assets/trash.svg">  Borrar </button>
             </div>
     </section>
+    </div>
 </body>
 
 </html>
